@@ -1,0 +1,68 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/write" >
+
+  
+
+  
+  <Button
+      android:id="@+id/Cancel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/save"
+      android:layout_alignBottom="@+id/save"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="17dp"
+      android:text="Cancel" />
+
+  <EditText
+      android:id="@+id/editTextfile"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/save"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="48dp"
+      android:ems="10"
+      android:inputType="textMultiLine"
+      android:hint="enter text"
+      />
+
+  <TextView
+      android:id="@+id/showMyDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/Cancel"
+      android:layout_centerHorizontal="true"
+      android:text="date" />
+
+  <ImageButton
+      android:id="@+id/myDatePickerButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/Cancel"
+    
+      android:src="@drawable/datepicker" />
+
+  <Button
+      android:id="@+id/get_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     
+      android:text="load image" />
+
+  <Button
+      android:id="@+id/save"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/imageView1"
+    
+      android:text="Save" />
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_below="@+id/myDatePickerButton"
+      android:layout_toLeftOf="@+id/Cancel"
+      android:src="@drawable/d" />
+ 
+  </RelativeLayout>

@@ -1,0 +1,71 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/write" >
+
+  <TextView
+      android:id="@+id/file_path_text_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@+id/imageButton1"
+      android:layout_below="@+id/start_file_picker_button"
+      
+       />
+
+  <Button
+      android:id="@+id/Cancel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/save"
+      android:layout_alignBottom="@+id/save"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="17dp"
+      android:text="Cancel" />
+
+  <TextView
+      android:id="@+id/showMyDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@+id/file_path_text_view"
+      android:layout_marginLeft="26dp"
+      android:layout_toRightOf="@+id/start_file_picker_button"
+      android:text="date" />
+
+  <ImageButton
+      android:id="@+id/myDatePickerButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/showMyDate"
+      android:layout_alignLeft="@+id/Cancel"
+      android:src="@drawable/datepicker" />
+
+  <Button
+      android:id="@+id/start_file_picker_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignRight="@+id/save"
+      android:layout_marginTop="26dp"
+      android:text="browser" />
+
+  <Button
+      android:id="@+id/save"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/file_path_text_view"
+      android:layout_marginLeft="48dp"
+      android:layout_toRightOf="@+id/file_path_text_view"
+      android:text="Save" />
+
+  <EditText
+      android:id="@+id/editTextfile"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/Cancel"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="33dp"
+      android:ems="10"
+      android:inputType="textMultiLine" >
+
+      <requestFocus />
+  </EditText>
+ 
+  </RelativeLayout>

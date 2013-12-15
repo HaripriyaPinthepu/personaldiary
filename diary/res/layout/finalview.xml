@@ -1,0 +1,36 @@
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/sweet">
+<RelativeLayout  android:layout_width="fill_parent" android:layout_height="456dp"> 
+ 
+  <Button android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginBottom="15dp" android:layout_marginRight="27dp" android:text="Home" /> 
+  <Button android:id="@+id/edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_marginLeft="37dp" android:text="edit" /> 
+  <Button android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:text="Speech" />
+
+  <Button
+      android:id="@+id/buttonb"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:text="delete" />
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@+id/textView1"
+      android:layout_marginTop="96dp"
+      android:src="@drawable/d" />
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/editText1"
+      android:layout_below="@+id/buttonb"
+      android:layout_marginTop="32dp"
+      android:text="hi text"
+      android:textColor="#ffffff" />
+  
+  </RelativeLayout>
+  </ScrollView>
